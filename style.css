@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@500&display=swap');
+
+* {
+    font-family: "poppins";
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(
+        to right,
+        #e7d9d0 0%,
+        #e7d9d0 35%,
+        white 35%,
+        white 100%
+    );
+}
+
+nav {
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px #979797;
+}
+
+.icon {
+    max-width: 25px;
+    padding: 1px;
+}
+
+.identitas {
+    /* display: grid;
+    grid-template-columns: repeat(2, 2fr); */
+    display: flex;
+    justify-content: end;
+    gap: 80px;
+    text-align: center;
+    align-items: center;
+    margin-top: 125px;
+}
+
+.kartu {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 100px 30px 100px;
+    background: #f5eee8;
+    width: 350px;
+    margin-left: 50px;
+    box-shadow: 0 4px 4px grey;
+}
+
+.my-img {
+    justify-content: center;
+    max-width: 200px;
+    margin-top: px;
+}
+
+.nama {
+    margin-top: 15px;
+}
+
+.perkenalan {
+    text-align: start;
+}
+
+.perkenalan h1 {
+    margin-bottom: 25px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.perkenalan h5 {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 35px;
+}
+
+.tombol {
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    background:  #3b5998;
+    border-radius: 50px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.tombol-1 {
+    background-color: #3b5998;
+    color: white;
+    margin-right: 16px;
+    border: 1px solid black;
+}
+
+.tombol:hover {
+    color: white;
+    background: #3b5998;
+}
+
+.tombol-1:hover {
+    color: black;
+    background: white;
+}
+
+.perkenalan p {
+    margin-top: 35px;
+}
+
+.line {
+    height: 2px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background: #485773;
+}
+
+.profesi {
+    margin-top: 10px;
+}
+
+.sosmed {
+    padding: 10px;
+    background: white;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow img {
+    width: 60px;
+}
+
+#arrow {
+    animation: 1s upDown infinite;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* SECTION KE-2 ABOUT */
+
+.profil {
+    max-width: 500px;
+    filter: grayscale(1);
+}
+
+.profil:hover {
+    /* max-width: 500px; */
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+.about-exp-item {
+    margin-top: 32px;
+}
+
+.about-exp-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-exp-item-detail {
+    display: none;
+}
+
+.tentang {
+    gap: 140px;
+}
+
+section {
+    padding-top: 130px;
+}
+
+.batas {
+    padding-top: 0;
+}
+
+.tentang h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tentang a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.tentang a:hover {
+    text-decoration: none;
+    color: white;
+    background: grey;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* SECTION KE-3 WORKING */
+
+.kerja {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.work {
+    display: flex;
+    justify-content: end;
+}
+
+.work-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:    "work-1 work-2"
+                            "work-3 work-3";
+    gap: 10px;
+}
+
+.work h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.work-img img {
+    width: 100%;
+}
+
+#work-1 {
+    grid-area: work-1;
+}
+
+#work-2 {
+    grid-area: work-2;
+}
+
+#work-3 {
+    grid-area: work-3;
+}
+
+.work-img-items {
+    position: relative;
+}
+
+.work-img-items:hover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#work-1:hover::after {
+    content: "Hai";
+}
+
+#work-2:hover::after {
+    content: "Hai";
+}
+
+#work-3:hover::after {
+    content: "Hai";
+}
+
+.contact-item h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 38px;
+    color: black;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-items img {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    height: 60px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+form {
+    border: 1px solid black;
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.btn {
+    border: 1px solid grey;
+    color: white;
+    background: grey;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .identitas {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 50px;
+    }
+
+    .kartu {
+        /* display: flex;
+        flex-direction: column; */
+        padding: 80px 80px 30px 80px;
+        background: #f5eee8;
+        width: 300px;
+        margin-left: 10px;
+        box-shadow: 0 4px 4px grey;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section {
+        padding-top: 100px;
+    }
+
+    .tentang {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .profil {
+        max-width: 320px;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: coloumn;        
+    }
+
+    .work-img {
+        width: 100%;
+    }
+
+    .kerja {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .kerja p {
+        text-align: start;
+    }
+    
+    .logo img {
+        height: 30px;
+    }
+
+    .logo p {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .identitas {
+        flex-direction: column;
+    }
+
+    .tentang {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .work {
+        display: flex;
+        flex-direction: coloumn;        
+    }
+
+    .kerja {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .logo p {
+        font-size: 14px;
+        margin-top: 2px;
+    }
+}

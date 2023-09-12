@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Portfolio Rahmat Hidayat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand fs-3 fw-medium" href="#">RH</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active fs-6" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Home Page -->
+
+    <section id="home" class="batas container">
+      <div class="identitas">
+
+        <div id="kartu" name="kartu" class="kartu">
+            <img class="my-img" src="Images/pribadi.png" alt="Foto Pribadi">
+          <div>
+            <h5 class="nama">Muhammad Rahmat <br> Hidayat</h5>
+            <div class="line"></div>
+            <p class="profesi">Software Engineer</p>
+          </div>
+          <div class="sosmed">
+            <a href="https://www.facebook.com/RAHMAT.HIDAYAT.MHD.3720190/" target="_blank"><img src="Images/logo-facebook.svg" alt="Logo Facebook" class="icon"></a>
+            <a href="https://www.instagram.com/mr_hidayat_03" target="_blank"><img src="Images/logo-instagram.svg" alt="Logo Instagram" class="icon"></a>
+            <a href=""><img src="Images/logo-twitter.svg" alt="Logo Twitter" class="icon"></a>
+            <a href=""><img src="Images/logo-linkedin.svg" alt="Logo Linkind" class="icon"></a>
+          </div>
+        </div>
+
+        <div id="perkenalan" name="perkenalan" class="perkenalan">
+          <h1 style="color: black;">Hallo</h1>
+          <h5>Here's who i am & what i do</h5>
+          <a href="#about" class="tombol tombol-1">Resume</a>
+          <a href="#work" class="tombol">Project</a>
+          <p>A junior fullstack developer who currently focused on Web Development. Other than that, I also interested in UX/UI Design, I love to learn new things and always open to new opportunities.</p>
+        </div>
+      </div>
+      <div class="arrow">
+        <a class="text-decoration-none text-dark" href="#about">More Info</a>
+        <img id="arrow" class="mt-1" src="Images/bawah.svg" alt="arrow">
+      </div>
+    </section>
+
+      <!-- ABOUT -->
+
+      <section id="about" class="about container">
+        <div>
+          <div class="tentang">
+            <h2>About</h2>
+            <p class="intro">A brief introduction about me and my interest.</p>
+            <div class="about-exp">
+              <div class="about-exp-item">
+                  <div class="about-exp-item-header">
+                      <div>
+                          <h5>Sekolah Dasar</h5>
+                          <p>Lorem ipsum dolor sit. (2023-Now)</p>
+                      </div>
+                      <button class="btn button" onclick="toggleDetail(event)">Learn More</button>
+                  </div>
+                  <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam, rerum nisi laborum labore est dolores neque fuga esse commodi nam quia atque aut dolorum! Culpa reprehenderit quo voluptates laboriosam.</p>
+              </div>
+              <div class="about-exp-item">
+                  <div class="about-exp-item-header">
+                      <div>
+                          <h5>Sekolah Menengah pertama</h5>
+                          <p>Lorem ipsum dolor sit amet. (2023-Now)</p>
+                      </div>
+                      <button class="btn button" onclick="toggleDetail(event)">Learn More</button>
+                  </div>
+                  <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam, rerum nisi laborum labore est dolores neque fuga esse commodi nam quia atque aut dolorum! Culpa reprehenderit quo voluptates laboriosam.</p>
+              </div>
+              <div class="about-exp-item">
+                  <div class="about-exp-item-header">
+                      <div>
+                          <h5>Sekelah Menengah Atas</h5>
+                          <p>Lorem ipsum dolor sit amet.(2023-Now)</p>
+                      </div>
+                      <button class="btn button" onclick="toggleDetail(event)">Learn More</button>
+                  </div>
+                  <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam, rerum nisi laborum labore est dolores neque fuga esse commodi nam quia atque aut dolorum! Culpa reprehenderit quo voluptates laboriosam.</p>
+              </div>
+          </div>
+        </div>
+          <!-- <img class="profil" src="/project portfolio/Images/IMG_20210506_172020_557.jpg" alt="Pribadi"> -->
+        </div>
+      </section>
+
+      <!-- WORKING -->
+
+      <section id="work" class="container">
+        <div class="kerja d-flex align-items-center">
+          <div class="col-6 work-img">
+            <div id="work-1" class="work-img-items">
+              <img src="Images/work2.jpg" alt="work">
+            </div>
+            <div id="work-2" class="work-img-items">
+              <img src="Images/work1.jpg" alt="work">
+            </div>
+            <div id="work-3" class="work-img-items">
+              <img src="Images/work.jpg" alt="work">
+            </div>
+          </div>          
+          <div class="">
+            <h2>Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ratione!</p>
+          </div> 
+      </div>
+      </section>
+
+      <!-- SECTION CONTACT -->
+
+      <section id="contact" class="container">
+        <div class="row contact">
+          <div class="col contact-item">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, fugiat.</p>
+            <div class="row">
+              <div class="col d-flex align-items-center logo">
+                <img class="w-25" src="Images/logo-facebook.svg" alt="icon Facebook">
+                <p class="mb-0 ms-2">Muhammad Rahmat Hidayat</p>
+              </div>
+              <div class="col d-flex align-items-center logo">
+                <img class="w-25" src="Images/logo-instagram.svg" alt="icon Instagram">
+                <p class="mb-0 ms-2">@mr_hidayat_03</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <form class="contact-form" onsubmit="onFormSubmit(event)" 
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbxut9OXu2hgsnb176zBrSjUFC9J5PobElGGebN80kimGYGKlRzhmNfEpLJDtWRJ3ex4PQ/exec" id="my-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" class="form-control" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" id="email" class="form-control" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" class="form-control" name="subject" required>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Message</label>
+                <input type="text" id="pesan" class="form-control" name="pesan" required>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script>
+
+      window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Terima kasih telah memberi kritikan NYET 🖕🏼🖕🏼🖕🏼!!");
+    })
+  });
+});
+
+    </script>
+  </body>
+</html>
